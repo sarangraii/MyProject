@@ -1,0 +1,361 @@
+/* src/components/Registration/Registration.css */
+/*.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .registration-form-wrapper {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px 0;
+  }
+  
+  .registration-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .registration-header h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .registration-header p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  label {
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #7b68ee;
+    box-shadow: 0 0 0 2px rgba(123, 104, 238, 0.2);
+  }
+  
+  input.error,
+  select.error {
+    border-color: #e74c3c;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  
+  .radio-label input {
+    cursor: pointer;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .checkbox-label a {
+    color: #7b68ee;
+    text-decoration: none;
+  }
+  
+  .checkbox-label a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-primary {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff6b6b;
+  }
+  
+  .btn-primary:disabled {
+    background-color: #b2a8e0;
+    cursor: not-allowed;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .login-link a {
+    color: #7b68ee;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .success-message {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .success-message i {
+    font-size: 60px;
+    color: #2ecc71;
+    margin-bottom: 20px;
+  }
+  
+  .success-message h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .success-message p {
+    color: #666;
+    margin-bottom: 25px;
+  }
+  
+  .success-message .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+  }
+  
+  /* Responsive adjustments 
+  @media (max-width: 768px) {
+    .registration-form-wrapper {
+      padding: 30px 20px;
+    }
+    
+    .form-row {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .radio-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  } */
+
+  /* General Container Styling */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right,white);
+  padding: 20px;
+}
+
+/* Form Wrapper */
+.registration-form-wrapper {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+.registration-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.registration-header p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ff4f7b;
+  outline: none;
+}
+
+/* Error Styling */
+.error-input {
+  border-color: #e74c3c !important;
+  background: #ffecec;
+}
+
+.field-error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Gender & User Type Section */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-group select {
+  width: 100%;
+}
+
+/* Button Styling */
+.submit-btn {
+  width: 100%;
+  background: #ff4f7b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: #e0446d;
+}
+
+/* Login Link */
+.auth-footer {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #ff4f7b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .registration-form-wrapper {
+    padding: 20px;
+  }
+
+  .registration-header h2 {
+    font-size: 20px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+  

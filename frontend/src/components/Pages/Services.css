@@ -1,0 +1,367 @@
+/* src/components/Pages/Services.css */
+.services-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.services-filter {
+  margin-bottom: 30px;
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-tab {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+  background-color: #f0f0f0;
+}
+
+.category-tab.active {
+  background-color: #ff6b6b;
+  color: white;
+  border-color: #ff6b6b;
+}
+
+.gender-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gender-filter span {
+  font-size: 14px;
+  color: #666;
+}
+
+.gender-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.gender-btn {
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gender-btn:hover {
+  background-color: #f8f9fa;
+}
+
+.gender-btn.active {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.gender-btn.male {
+  border-color: #1976d2;
+  color: #1976d2;
+}
+
+.gender-btn.male.active {
+  background-color: #1976d2;
+  color: white;
+}
+
+.gender-btn.female {
+  border-color: #c2185b;
+  color: #c2185b;
+}
+
+.gender-btn.female.active {
+  background-color: #c2185b;
+  color: white;
+}
+
+.gender-btn.unisex {
+  border-color: #388e3c;
+  color: #388e3c;
+}
+
+.gender-btn.unisex.active {
+  background-color: #388e3c;
+  color: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.service-gender {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.service-gender.male {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.service-gender.female {
+  background-color: #fce4ec;
+  color: #c2185b;
+}
+
+.service-gender.unisex {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-content p {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.service-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.service-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff6b6b;
+}
+
+.service-duration {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.service-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-book {
+  flex: 1;
+  padding: 10px 0;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-book:hover {
+  background-color: #ff5252;
+}
+
+.btn-info {
+  padding: 10px 15px;
+  background-color: white;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-info:hover {
+  background-color: #f8f9fa;
+}
+
+.services-cta {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  color: #666;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff5252;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gender-filter {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .services-cta {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .category-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-tab {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .service-actions {
+    flex-direction: column;
+  }
+  
+  .btn-info {
+    margin-top: 10px;
+  }
+}
+
+
+/* Gender filter button styles */
+.gender-buttons {
+display: flex;
+gap: 10px;
+}
+
+.gender-btn {
+padding: 8px 16px;
+border: 1px solid #ddd;
+background-color: #f8f8f8;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.gender-btn:hover {
+background-color: #f0f0f0;
+}
+
+.gender-btn.active {
+background-color: #333;
+color: white;
+border-color: #333;
+}
+
+.gender-btn.male.active {
+background-color: #3498db;
+border-color: #3498db;
+}
+
+.gender-btn.female.active {
+background-color: #e84393;
+border-color: #e84393;
+}
+
+.gender-btn.unisex.active {
+background-color: #6c5ce7;
+border-color: #6c5ce7;
+}
